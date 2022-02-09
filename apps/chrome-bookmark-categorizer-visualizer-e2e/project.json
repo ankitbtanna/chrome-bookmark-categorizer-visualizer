@@ -1,0 +1,30 @@
+{
+  "root": "apps/chrome-bookmark-categorizer-visualizer-e2e",
+  "sourceRoot": "apps/chrome-bookmark-categorizer-visualizer-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/chrome-bookmark-categorizer-visualizer-e2e/cypress.json",
+        "devServerTarget": "chrome-bookmark-categorizer-visualizer:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "chrome-bookmark-categorizer-visualizer:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/chrome-bookmark-categorizer-visualizer-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["chrome-bookmark-categorizer-visualizer"]
+}
