@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: stretch;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.header {
+    background-color: rgb(20, 20, 20);
+    color: #ffffff;
+    padding-left: 20px;
+}

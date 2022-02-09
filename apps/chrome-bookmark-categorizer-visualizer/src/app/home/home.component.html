@@ -1,0 +1,9 @@
+<div *ngIf="(backups$ | async) as backups" class="backups">
+    <div *ngFor="let backup of backups" class="backup" (click)="navigateToBackup(backup._id)">
+        <h2>Backup Name: {{backup.backupName}}</h2>
+        <h3>{{backup.timeStamp | date: 'medium'}}</h3>
+    </div>
+</div>
+
+<div class="circle">
+</div>
