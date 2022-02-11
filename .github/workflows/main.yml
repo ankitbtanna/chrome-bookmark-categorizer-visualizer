@@ -40,7 +40,7 @@ jobs:
         
       # Install Angular CLI
       - name: Install Angular CLI
-        run: npm i @angular/cli -g
+        run: npm i @angular/cli@13.2.2 -g
 
       # Build prod build
       - name: Build Prod distributable
