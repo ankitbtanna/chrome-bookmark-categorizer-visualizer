@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 1,
   "projects": {
     "chrome-bookmark-categorizer-visualizer": "apps/chrome-bookmark-categorizer-visualizer",
     "chrome-bookmark-categorizer-visualizer-e2e": "apps/chrome-bookmark-categorizer-visualizer-e2e"
