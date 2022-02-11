@@ -37,6 +37,10 @@ jobs:
       # Install npm packages
       - name: Install npm packages
         run: npm i --force
+        
+      # Install Angular CLI
+      - name: Install Angular CLI
+        run: npm i @angular/cli -g
 
       # Build prod build
       - name: Build Prod distributable
