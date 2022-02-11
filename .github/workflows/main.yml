@@ -33,3 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           pwd
+      
+      # Install npm packages
+      - name: Install npm packages
+        run: npm i --force
