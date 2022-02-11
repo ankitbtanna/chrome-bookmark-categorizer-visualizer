@@ -36,7 +36,7 @@ jobs:
       
       # Install npm packages
       - name: Install npm packages
-        run: npm i --force
+        run: npm i
         
       # Install Angular CLI
       - name: Install Angular CLI
