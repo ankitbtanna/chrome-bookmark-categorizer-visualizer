@@ -37,3 +37,15 @@ jobs:
       # Install npm packages
       - name: Install npm packages
         run: npm i --force
+
+      # Build prod build
+      - name: Build Prod distributable
+        run: ng build --prod
+        
+      # see if dist is created
+      - name: Dist directory Check
+        run: |
+          cd dist
+          cd apps
+          cd chrome-bookmark-categorizer-vizualizer
+          pwd
