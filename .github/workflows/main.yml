@@ -64,4 +64,4 @@ jobs:
       
       # Deploy
       - name: Deploy
-        run: aws s3 sync . s3://tabcategorizer
+        run: aws s3 sync ./dist/apps/chrome-bookmark-categorizer-visualizer s3://tabcategorizer
