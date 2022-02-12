@@ -1,5 +1,5 @@
 <div class="windows">
-    <div class="window" *ngFor="let window of (windows$ | async) | keyvalue;let i = index;">
+    <div class="window" *ngFor="let window of (windows$ | async) | keyvalue;let i = index;" [routerLink]="['/sites']" [queryParams]="{backupId: backupId, windowId: window.key}">
         <h2>#{{i+1}} Window ID: {{window.key}}</h2>
         <h3>Tabs Open: {{window.value}}</h3>
     </div>

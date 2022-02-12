@@ -10,7 +10,7 @@ import { of } from 'rxjs';
   styleUrls: ['./window-view.component.scss'],
 })
 export class WindowViewComponent implements OnInit {
-  private backupId = '123';
+  backupId = '123';
 
   windows$ = of({});
 
